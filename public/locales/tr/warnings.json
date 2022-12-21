@@ -1,0 +1,14 @@
+{
+    "username_required": "Lütfen kullanıcı adınızı girin.",
+    "username_invalid": "Kullanıcı adı geçersiz.",
+    "username_taken": "Kullanıcı adı zaten alınmış.",
+    "username_not_found": "Kullanıcı adı bulunamadı.",
+    "email_required": "Lütfen e-posta adresinizi girin.",
+    "email_invalid": "E-posta adresi geçersiz.",
+    "email_taken": "E-posta adresi zaten alınmış.",
+    "password_required": "Lütfen şifrenizi girin.",
+    "password_invalid": "Şifre geçersiz.",
+    "password_mismatch": "Şifreler uyuşmuyor.",
+    "password_length": "Şifre en az 8 karakter uzunluğunda olmalıdır.",
+    "password_strength": "Şifre en az bir büyük harf, bir küçük harf ve bir sayı içermelidir."
+}

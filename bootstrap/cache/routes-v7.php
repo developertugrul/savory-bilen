@@ -96,13 +96,13 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/api/create' => 
+      '/api/auth/login' => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'generated::TBRd5CWkT8tjEY44',
+            '_route' => 'generated::GbPZNubCH8J1zWfr',
           ),
           1 => NULL,
           2 => 
@@ -115,76 +115,18 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/api/edit' => 
+      '/api/auth/register' => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'generated::SPNG27HUG8cTKthR',
+            '_route' => 'generated::HZ42i2MGw8soHxMx',
           ),
           1 => NULL,
           2 => 
           array (
             'POST' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/api/delete' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'generated::ThRhZ2ewNWiIFWts',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'POST' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/api' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'generated::uF9wf6WAPjbsG4vJ',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'POST' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'generated::fza9jcoToxkUL0xY',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
           ),
           3 => NULL,
           4 => false,
@@ -195,9 +137,44 @@ app('router')->setCompiledRoutes(
     ),
     2 => 
     array (
+      0 => '{^(?|/(.+)?(*:13))/?$}sDu',
     ),
     3 => 
     array (
+      13 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'generated::79OlKnrL3qSfGWsn',
+            'path' => NULL,
+          ),
+          1 => 
+          array (
+            0 => 'path',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+        1 => 
+        array (
+          0 => NULL,
+          1 => NULL,
+          2 => NULL,
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => 0,
+        ),
+      ),
     ),
     4 => NULL,
   ),
@@ -349,27 +326,27 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::TBRd5CWkT8tjEY44' => 
+    'generated::GbPZNubCH8J1zWfr' => 
     array (
       'methods' => 
       array (
         0 => 'POST',
       ),
-      'uri' => 'api/create',
+      'uri' => 'api/auth/login',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'api',
         ),
-        'uses' => 'App\\Http\\Controllers\\APIs\\V100\\Auth\\TextController@create',
-        'controller' => 'App\\Http\\Controllers\\APIs\\V100\\Auth\\TextController@create',
+        'uses' => 'App\\Http\\Controllers\\APIS\\V100\\Auth\\IndexController@login',
+        'controller' => 'App\\Http\\Controllers\\APIS\\V100\\Auth\\IndexController@login',
         'namespace' => NULL,
-        'prefix' => 'api',
+        'prefix' => 'api/auth',
         'where' => 
         array (
         ),
-        'as' => 'generated::TBRd5CWkT8tjEY44',
+        'as' => 'generated::GbPZNubCH8J1zWfr',
       ),
       'fallback' => false,
       'defaults' => 
@@ -385,27 +362,27 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::SPNG27HUG8cTKthR' => 
+    'generated::HZ42i2MGw8soHxMx' => 
     array (
       'methods' => 
       array (
         0 => 'POST',
       ),
-      'uri' => 'api/edit',
+      'uri' => 'api/auth/register',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'api',
         ),
-        'uses' => 'App\\Http\\Controllers\\APIs\\V100\\Auth\\TextController@edit',
-        'controller' => 'App\\Http\\Controllers\\APIs\\V100\\Auth\\TextController@edit',
+        'uses' => 'App\\Http\\Controllers\\APIS\\V100\\Auth\\IndexController@register',
+        'controller' => 'App\\Http\\Controllers\\APIS\\V100\\Auth\\IndexController@register',
         'namespace' => NULL,
-        'prefix' => 'api',
+        'prefix' => 'api/auth',
         'where' => 
         array (
         ),
-        'as' => 'generated::SPNG27HUG8cTKthR',
+        'as' => 'generated::HZ42i2MGw8soHxMx',
       ),
       'fallback' => false,
       'defaults' => 
@@ -421,108 +398,44 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::ThRhZ2ewNWiIFWts' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'POST',
-      ),
-      'uri' => 'api/delete',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'uses' => 'App\\Http\\Controllers\\APIs\\V100\\Auth\\TextController@delete',
-        'controller' => 'App\\Http\\Controllers\\APIs\\V100\\Auth\\TextController@delete',
-        'namespace' => NULL,
-        'prefix' => 'api',
-        'where' => 
-        array (
-        ),
-        'as' => 'generated::ThRhZ2ewNWiIFWts',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'generated::uF9wf6WAPjbsG4vJ' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'POST',
-      ),
-      'uri' => 'api',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'api',
-        ),
-        'uses' => 'App\\Http\\Controllers\\APIs\\V100\\Auth\\TextController@index',
-        'controller' => 'App\\Http\\Controllers\\APIs\\V100\\Auth\\TextController@index',
-        'namespace' => NULL,
-        'prefix' => 'api',
-        'where' => 
-        array (
-        ),
-        'as' => 'generated::uF9wf6WAPjbsG4vJ',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'generated::fza9jcoToxkUL0xY' => 
+    'generated::79OlKnrL3qSfGWsn' => 
     array (
       'methods' => 
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
-      'uri' => '/',
+      'uri' => '{path?}',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'web',
         ),
-        'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:262:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:44:"function () {
-    return \\view(\'welcome\');
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000003400000000000000000";}";s:4:"hash";s:44:"q5KFA8L9/aVLyKF8Q41uhvDEIcotoUpI9vE2kRZv9og=";}}',
+        'uses' => '\\Illuminate\\Routing\\ViewController@__invoke',
+        'controller' => '\\Illuminate\\Routing\\ViewController',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'generated::fza9jcoToxkUL0xY',
+        'as' => 'generated::79OlKnrL3qSfGWsn',
       ),
       'fallback' => false,
       'defaults' => 
       array (
+        'view' => 'index',
+        'data' => 
+        array (
+        ),
+        'status' => 200,
+        'headers' => 
+        array (
+        ),
       ),
       'wheres' => 
       array (
+        'path' => '.+',
       ),
       'bindingFields' => 
       array (

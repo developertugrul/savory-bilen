@@ -1,0 +1,17 @@
+{
+    "driver_list": "Sürücü Listesi",
+    "car_list": "Araç Listesi",
+    "add_driver": "Sürücü Ekle",
+    "driver_updated": "Sürücü Güncellendi",
+    "driver_created": "Sürücü Oluşturuldu",
+    "driver_update_error": "Sürücü Güncelleme Hatası",
+    "driver_create_error": "Sürücü Oluşturma Hatası",
+    "update_driver": "Sürücü Güncelle",
+    "driver_not_found": "Sürücü Bulunamadı",
+    "driver_not_found_text": "Sürücü Bulunamadı",
+    "car_plate": "Araç Plakası",
+    "car_model": "Araç Modeli",
+    "car_brand": "Araç Markası",
+    "car_color": "Araç Rengi",
+    "car_year": "Araç Yılı"
+}

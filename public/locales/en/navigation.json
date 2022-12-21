@@ -1,0 +1,18 @@
+{
+    "home": "Home",
+    "statistics": "Statistics",
+    "general": "General",
+    "dashboard": "Dashboard",
+    "queries" : "Queries",
+    "support": "Support",
+    "company": "Company",
+    "my_companies": "My Taxi Companies",
+    "drivers": "Drivers",
+    "vehicles": "Vehicles",
+    "passengers": "Passengers",
+    "login": "Login",
+    "logout": "Logout",
+    "subscription_packages": "Subscription Packages",
+    "manager": "Manager",
+    "super_manager": "Super Manager"
+}

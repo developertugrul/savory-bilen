@@ -1,0 +1,22 @@
+{
+    "create_subscription_package": "Create Subscription Package",
+    "list_subscription_packages": "List Subscription Packages",
+    "edit_subscription_package": "Edit Subscription Package",
+    "delete_subscription_package": "Delete Subscription Package",
+    "add_subscription_package": "Add Subscription Package",
+    "subscription_package": "Subscription Package",
+    "create_subscription_package_description": "Create Subscription Package Description",
+    "subscription_package_updated": "Subscription Package Updated",
+    "subscription_package_created": "Subscription Package Created",
+    "subscription_package_create_error": "Subscription Package Create Error",
+    "subscription_package_update_error": "Subscription Package Update Error",
+    "subscription_package_image": "Subscription Package Image",
+    "name": "Name",
+    "description": "Description",
+    "price": "Price",
+    "max_company_number": "Max Company Number",
+    "can_add_partner_firm": "Can Add Partner Firm",
+    "start_date": "Start Date",
+    "end_date": "End Date",
+    "status": "Status"
+}

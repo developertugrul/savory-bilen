@@ -1,0 +1,17 @@
+{
+    "driver_list": "Driver List",
+    "car_list": "Car List",
+    "add_driver": "Add Driver",
+    "driver_updated": "Driver Updated",
+    "driver_created": "Driver Created",
+    "driver_update_error": "Driver Update Error",
+    "driver_create_error": "Driver Create Error",
+    "update_driver": "Update Driver",
+    "driver_not_found": "Driver Not Found",
+    "driver_not_found_text": "Driver not found. Please try again.",
+    "car_plate": "Car Plate",
+    "car_model": "Car Model",
+    "car_brand": "Car Brand",
+    "car_color": "Car Color",
+    "car_year": "Car Year"
+}

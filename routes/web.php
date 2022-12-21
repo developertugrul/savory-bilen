@@ -13,12 +13,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::domain('{subdomain}.' . config('app.short_url'))->group(function () {
-    Route::get('/', function ($subdomain) {
-        echo $subdomain; // this will output the subdomain
-        // call the controller here
-    });
-    Route::controller('user', 'AuthController');
-});
-
 Route::view('/{path?}', 'index')->where('path', '.+'); // This is for react router

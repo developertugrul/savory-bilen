@@ -1,0 +1,10 @@
+{
+    "login": "Login",
+    "log-in": "Log in",
+    "intro": "Welcome to the login page",
+    "username": "Username",
+    "password": "Password",
+    "submit": "Submit",
+    "forgot": "Forgot your password?",
+    "register": "Register"
+}

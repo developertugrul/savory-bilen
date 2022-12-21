@@ -1,0 +1,18 @@
+{
+    "home": "Anasayfa",
+    "statistics": "İstatistik",
+    "general": "Genel",
+    "dashboard": "Yönetim paneli",
+    "queries": "Sorgular",
+    "support": "Destek",
+    "company": "Firma",
+    "my_companies": "Taxi Şirketlerim",
+    "drivers": "Sürücüler",
+    "vehicles": "Araçlar",
+    "passengers": "Yolcular",
+    "login": "Giriş",
+    "logout": "Çıkış",
+    "subscription_packages": "Abonelik Paketleri",
+    "manager": "Yönetici",
+    "super_manager": "Süper Yönetici"
+}

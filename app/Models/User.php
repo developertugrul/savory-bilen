@@ -19,8 +19,24 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
+        'surname',
+        'username',
+        'gender',
         'email',
         'password',
+        'user_type',
+        'is_active',
+        'phone',
+        'address',
+        'city',
+        'state',
+        'country',
+        'zip_code',
+        'company_id',
+        'company_owner_id',
+        'website',
+        'membership_package_id',
+        'membership_expire_date',
     ];
 
     /**
@@ -41,4 +57,10 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+
+    // find username
+    public function findForPassport($username) {
+        return $this->where('email', $username)->first();
+    }
 }

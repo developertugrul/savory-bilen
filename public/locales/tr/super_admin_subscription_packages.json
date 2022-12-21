@@ -1,0 +1,22 @@
+{
+    "create_subscription_package": "Abonelik paketi oluştur",
+    "list_subscription_packages": "Abonelik paketleri listesi",
+    "edit_subscription_package": "Abonelik paketini düzenle",
+    "delete_subscription_package": "Abonelik paketini sil",
+    "add_subscription_package": "Abonelik paketi ekle",
+    "subscription_package": "Abonelik paketi",
+    "create_subscription_package_description": "Abonelik paketi oluştur",
+    "subscription_package_updated": "Abonelik paketi güncellendi",
+    "subscription_package_created": "Abonelik paketi oluşturuldu",
+    "subscription_package_create_error": "Abonelik paketi oluşturulamadı",
+    "subscription_package_update_error": "Abonelik paketi güncellenemedi",
+    "subscription_package_image": "Abonelik paketi resmi",
+    "name": "İsim",
+    "description": "Açıklama",
+    "price": "Fiyat",
+    "max_company_number": "Maksimum şirket sayısı",
+    "can_add_partner_firm": "Ortaklık firması eklenebilir",
+    "start_date": "Başlangıç tarihi",
+    "end_date": "Bitiş tarihi",
+    "status": "Durum"
+}
