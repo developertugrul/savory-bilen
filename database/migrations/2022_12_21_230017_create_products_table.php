@@ -25,6 +25,7 @@ return new class extends Migration
             $table->string("image", 255)->nullable();
             $table->boolean("is_active")->default(true);
             $table->double("price", 11, 2)->default(0);
+            $table->double("cost", 11, 2)->default(0);
             $table->boolean("discount_type")->default(0); // 0 - percentage, 1 - fixed
             $table->double("discount", 11, 2)->default(0);
             $table->integer("quantity")->default(0);

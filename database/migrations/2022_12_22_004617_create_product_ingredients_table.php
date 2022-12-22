@@ -13,19 +13,15 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('order_receipts', function (Blueprint $table) {
+        Schema::create('product_ingredients', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger("table_id")->default(0);
             $table->unsignedBigInteger("company_id")->default(0);
             $table->unsignedBigInteger("company_owner_id")->default(0);
-            $table->unsignedBigInteger("waiter_id")->default(0);
-            $table->double("amount",11,2)->default(0);
-            $table->double("total_discount",11,2)->default(0);
-            $table->double("total_amount",11,2)->default(0);
-            $table->boolean("is_paid")->default(false);
+            $table->unsignedBigInteger("product_id")->default(0);
+            $table->unsignedBigInteger("ingredient_id")->default(0);
+            $table->double("quantity",11,2)->default(0);
+            $table->string("unit", 50)->nullable();
             $table->boolean("is_active")->default(true);
-            $table->boolean("is_take_away")->default(false);
-            $table->boolean("is_delivery")->default(false);
             $table->timestamps();
         });
     }
@@ -37,6 +33,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('order_receipts');
+        Schema::dropIfExists('product_ingredients');
     }
 };

@@ -22,11 +22,8 @@ return new class extends Migration
             $table->unsignedBigInteger("customer_id")->default(0);
             $table->unsignedBigInteger("receipt_id")->default(0);
             $table->double("total_price",11,2)->default(0);
-            $table->double("total_discount",11,2)->default(0);
             $table->boolean("is_paid")->default(false);
             $table->boolean("is_active")->default(true);
-            $table->boolean("is_take_away")->default(false);
-            $table->boolean("is_delivery")->default(false);
             $table->boolean("is_completed")->default(false);
             $table->string("description", 500)->nullable();
             $table->timestamps();
