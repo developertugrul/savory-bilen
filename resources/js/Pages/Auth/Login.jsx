@@ -15,7 +15,8 @@ import {API_URL} from "@/Constant/GlobalConstants";
 const Login = () => {
     // include some translations from resources\js\i18n.js
     const {t} = useTranslation([
-        "login"
+        "login",
+        "error"
     ]);
     //return (<div>Updating ...</div>);
 

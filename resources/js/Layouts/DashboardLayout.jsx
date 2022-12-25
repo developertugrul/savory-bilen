@@ -9,6 +9,7 @@ import Sidebar from "./Sidebar/Sidebar";
 import FooterClass from "./Footer/Footer"
 import {useSelector} from "react-redux";
 import Cookies from "js-cookie";
+import ColorChanger from "@/Layouts/Common/ColorChanger";
 
 const DashboardLayout = ({
                              children,
@@ -45,6 +46,7 @@ const DashboardLayout = ({
                     </div>
                     <FooterClass/>
                 </div>
+                <ColorChanger/>
             </div>
             <ToastContainer/>
         </Fragment>

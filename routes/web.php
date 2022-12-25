@@ -12,5 +12,15 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', [\App\Http\Controllers\Frontend\Home\IndexController::class, 'index'])->name("home");
 
-Route::view('/{path?}', 'index')->where('path', '.+'); // This is for react router
+Route::group([
+    'prefix' => 'dashboard',
+], function () {
+    Route::view('/{path?}', 'dashboard')->where('path', '.+'); // This is for react router
+});
+Route::group([
+    'prefix' => 'auth',
+], function () {
+    Route::view('/{path?}', 'dashboard')->where('path', '.+'); // This is for react router
+});

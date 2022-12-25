@@ -26,7 +26,7 @@ class IndexController extends Controller
             'email' => $request->email,
             'password' => bcrypt($request->password),
             "is_active" => $request->is_active,
-            "user_type" => 2,
+            "user_type" => 4,
         ]);
         if ($user->save()) {
             $credentials = ['username' => $request->username, 'password' => $request->password]; // get credentials from request
